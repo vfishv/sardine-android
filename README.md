@@ -1,7 +1,7 @@
 # sardine-android
 
-[![Build Status](https://circleci.com/gh/thegrizzlylabs/sardine-android.svg?&style=shield)](https://circleci.com/gh/thegrizzlylabs/sardine-android)
-[![Version number](https://jitpack.io/v/thegrizzlylabs/sardine-android.svg) ](https://jitpack.io/v/thegrizzlylabs/sardine-android.svg)
+[![Build Status](https://github.com/thegrizzlylabs/sardine-android/actions/workflows/android.yml/badge.svg)](https://github.com/thegrizzlylabs/sardine-android/actions/workflows/android.yml)
+[![Version number](https://jitpack.io/v/thegrizzlylabs/sardine-android.svg) ](https://jitpack.io/#thegrizzlylabs/sardine-android)
 
 A WebDAV client for Android, using [OkHttp](https://github.com/square/okhttp) as HTTP client.
 
@@ -40,3 +40,6 @@ Originally forked from [Sardine](https://github.com/lookfirst/sardine)
 [Apache HTTP Client](http://hc.apache.org/) was replaced by [OkHttp](https://github.com/square/okhttp)
 
 JAXB was replaced by [SimpleXml](http://simple.sourceforge.net/)
+
+## Alternatives
+See [Awesome WebDAV: Java libraries](https://github.com/WebDAVDevs/awesome-webdav/blob/main/readme.md#java)

@@ -369,7 +369,7 @@ public class OkHttpSardine implements Sardine {
                 .method("MOVE", null);
 
         Headers.Builder headersBuilder = new Headers.Builder();
-        headersBuilder.add("DESTINATION", URI.create(destinationUrl).toASCIIString());
+        headersBuilder.add("DESTINATION", destinationUrl);
         headersBuilder.add("OVERWRITE", overwrite ? "T" : "F");
 
         if (lockToken != null) {
@@ -404,8 +404,7 @@ public class OkHttpSardine implements Sardine {
     public boolean exists(String url) throws IOException {
         Request request = new Request.Builder()
                 .url(url)
-                .header("Depth", "0")
-                .method("PROPFIND", null)
+                .method("HEAD", null)
                 .build();
 
         return execute(request, new ExistsResponseHandler());
