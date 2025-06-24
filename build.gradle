@@ -1,6 +1,7 @@
 buildscript {
     repositories {
-        jcenter()
+        //jcenter()
+        mavenCentral()
         google()
     }
     dependencies {
@@ -9,14 +10,16 @@ buildscript {
 }
 
 repositories {
-    jcenter()
+    //jcenter()
+    mavenCentral()
     google()
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 36
+    namespace "com.thegrizzlylabs.sardineandroid"
 
     defaultConfig {
         minSdkVersion 15
